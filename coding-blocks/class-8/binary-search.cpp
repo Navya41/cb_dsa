@@ -3,7 +3,7 @@ using namespace std;
 int binarySearch(int arr[], int n, int t){
     int s = 0;
     int e = n-1;
-    int m = (s+e)/2;
+    int m = s+(e-s)/2;
     while(s<=e){
         if (arr[m]==t){
             return m;
@@ -14,7 +14,7 @@ int binarySearch(int arr[], int n, int t){
         else {
             s = s+1;
         }
-        m=(e+s)/2;
+        m=s+(e-s)/2;
     }
     return -1;
 }
