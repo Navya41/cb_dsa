@@ -1,3 +1,5 @@
+//time: n.const ~ O(n) where n is the length of the string
+//space: O(1)
 #include <bits/stdc++.h>
 using namespace std;
 bool isGoodString(string str){

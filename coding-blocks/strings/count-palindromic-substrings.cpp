@@ -9,6 +9,8 @@ bool isPalindrom(string str){
     }
     return true;
 }
+//time : O(n^3)
+//space : O(n) due to substrings
 int NumberofPalindroms(string& str){
     int n=str.size();
     int cnt = 0;

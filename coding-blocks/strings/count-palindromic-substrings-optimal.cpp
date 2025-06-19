@@ -1,3 +1,5 @@
+//time : O(n^2)
+//space : O(1)
 #include <bits/stdc++.h>
 #include <string>
 using namespace std;
@@ -15,7 +17,7 @@ int countPalindromicSubstrings(string& str){
     //2.find out no. of even-length palindromic substrings in string
     for (double i=0.5; i<n; i++){
         double j = 0.5;
-        while ((i-j>=0) and (i+j<=n-1) and (str[i-j]==str[i+j])){
+        while ((i-j>=0) and (i+j<=n-1) and (str[(int)(i-j)]==str[(int)(i+j)])){
             cnt++; 
             j++;
         }
@@ -23,7 +25,7 @@ int countPalindromicSubstrings(string& str){
     return cnt;
 }
 int main() {
-	string str = "abaaba";
-	cout << countPalindromicSubstrings(str) << endl;
+    string str = "abaaba";
+    cout << countPalindromicSubstrings(str) << endl;
     return 0;
 }
