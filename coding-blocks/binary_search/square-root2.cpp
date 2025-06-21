@@ -1,3 +1,4 @@
+//works only when error is not very precise
 #include <bits/stdc++.h>
 using namespace std;
 

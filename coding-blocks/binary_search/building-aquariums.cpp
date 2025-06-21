@@ -12,7 +12,7 @@ bool aquarium (vector<int>& a,int n, int m, int x){
 int main() {
     int t;
     cin >> t;
-    while (t--){
+    while (t--){ //time - log(e-s).n
         int n, x;
         cin >> n >> x;
         vector<int> a(n);
